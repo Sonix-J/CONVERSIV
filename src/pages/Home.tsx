@@ -1,3 +1,9 @@
+// COMPONENTS
+import SectionHeading from "../components/SectionHeading";
+import FeatureCard from "../components/FeatureCard";
+import holder from "../assets/images/holder.jpg";
+import LayerRow from "../components/LayerRow";
+
 export default function Home() {
   return (
     <div
@@ -40,13 +46,13 @@ export default function Home() {
       </main>
       <section className="grid grid-cols-2 gap-8 bg-[#0C1A2B] text-white min-h-screen">
         <div className="flex flex-col p-12 gap-8 justify-center">
-          <p className="text-6xl font-bold text-left">
+          <h2 className="text-6xl font-bold text-left">
             Most teams lose revenue in conversations they never track.
+          </h2>
+          <p className="text-xl text-gray-400 max-w-sm">
+            Leads go cold. Context gets lost. Follow-ups don’t happen.
           </p>
-          <p className="text-gray-400">
-            Leads go cold. Context gets lost. Follow-ups don’t happen
-          </p>
-          <p className="text-gray-600 font-bold">
+          <p className="text-xl text-gray-600 font-bold max-w-sm">
             Your tools don’t talk to each other and your data doesn’t think.
           </p>
         </div>
@@ -60,6 +66,80 @@ export default function Home() {
             <div className="w-full h-80 bg-gray-700" />
           </div>
         </div>
+      </section>
+      <div className="flex justify-center items-center bg-[#0C1A2B]">
+        <SectionHeading text="Conversiv unifies your entire revenue flow into one AI-native system." />
+      </div>
+      <section className="flex flex-col justify-between px-12 py-32 bg-[#0C1A2B] text-white min-h-screen">
+        <div className="flex flex-row gap-8 justify-center items-center">
+          <FeatureCard
+            title="Capture"
+            description="Engage every visitor with intelligent, real-time conversations."
+            image={
+              <img
+                src={holder}
+                alt="holder"
+                className="w-full h-full object-cover"
+              />
+            }
+          />
+          <FeatureCard
+            title="Understand"
+            description="Engage every visitor with intelligent, real-time conversations."
+            image={
+              <img
+                src={holder}
+                alt="holder"
+                className="w-full h-full object-cover"
+              />
+            }
+          />
+          <FeatureCard
+            title="Act"
+            description="Engage every visitor with intelligent, real-time conversations."
+            image={
+              <img
+                src={holder}
+                alt="holder"
+                className="w-full h-full object-cover"
+              />
+            }
+          />
+        </div>
+      </section>
+      <div className="flex justify-center items-center bg-[#0C1A2B]">
+        <SectionHeading text="One System. Four powerful layers." />
+      </div>
+      <section className="flex flex-col justify-between px-12 py-32 gap-32 bg-[#0C1A2B] text-white min-h-screen">
+        <LayerRow
+          title="Conversational Layer"
+          description="Real-time AI chatbot that engages and qualifies leads."
+          buttonText="Call to action"
+          image={<div className="w-full h-full rounded-2xl bg-teal-200" />}
+          reverse
+        />
+
+        <LayerRow
+          title="Intelligence Layer"
+          description="Native GPT that understands intent, context, and behavior."
+          buttonText="Another button"
+          image={<div className="w-full h-full rounded-2xl bg-teal-200" />}
+        />
+
+        <LayerRow
+          title="Memory Layer"
+          description="CRM + Knowledge Base that stores and structures every interaction."
+          buttonText="Call to action"
+          image={<div className="w-full h-full rounded-2xl bg-teal-200" />}
+          reverse
+        />
+
+        <LayerRow
+          title="Action Layer"
+          description="Automated workflows that move deals forward."
+          buttonText="Another button"
+          image={<div className="w-full h-full rounded-2xl bg-teal-200" />}
+        />
       </section>
     </div>
   );
