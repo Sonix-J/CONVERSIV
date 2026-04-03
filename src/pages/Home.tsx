@@ -4,6 +4,7 @@ import FeatureCard from "../components/FeatureCard";
 import holder from "../assets/images/holder.jpg";
 import LayerRow from "../components/LayerRow";
 import PeekCard from "../components/PeekCard";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -30,17 +31,17 @@ export default function Home() {
           <h1 className="text-6xl font-bold text-center text-white">
             Turn every conversation into revenue.
           </h1>
-          <p className="text-center" style={{ color: "#E5E5E5" }}>
+          <p className="text-center text-white">
             Conversiv is an AI-native system that captures, understands, and
             acts on every customer interaction so your pipeline runs itself.
           </p>
         </div>
 
         <div className="flex flex-row gap-6 justify-center">
-          <button className="bg-white rounded px-3 py-2">
+          <button className="bg-white rounded px-3 py-2 transition-all duration-500 hover:bg-black hover:text-white">
             Get early access
           </button>
-          <button className="border rounded px-3 py-2 text-white">
+          <button className="border rounded px-3 py-2 text-white transition-all duration-500 hover:bg-white hover:text-black hover:border-white">
             See how it works
           </button>
         </div>
@@ -160,29 +161,56 @@ export default function Home() {
             }
           />
           <PeekCard
-          title="Lead Qualification"
-          description="Built for teams that run on conversations."
-          image={
-            <img
-              src={holder}
-              alt=""
-              className="w-full h-full object-cover rounded-t-xl"
-            />
-          }
-        />
-        <PeekCard
-          title="Lead Qualification"
-          description="Built for teams that run on conversations."
-          image={
-            <img
-              src={holder}
-              alt=""
-              className="w-full h-full object-cover rounded-t-xl"
-            />
-          }
-        />
+            title="Lead Qualification"
+            description="Built for teams that run on conversations."
+            image={
+              <img
+                src={holder}
+                alt=""
+                className="w-full h-full object-cover rounded-t-xl"
+              />
+            }
+          />
+          <PeekCard
+            title="Lead Qualification"
+            description="Built for teams that run on conversations."
+            image={
+              <img
+                src={holder}
+                alt=""
+                className="w-full h-full object-cover rounded-t-xl"
+              />
+            }
+          />
         </div>
       </section>
+      <section className="flex flex-col px-12 py-32 gap-32 bg-[#0C1A2B] text-white min-h-screen">
+        <h2 className="text-6xl text-white font-bold text-center ">
+          Built with early partners across real estate, B2B, and service
+          industries.
+        </h2>
+        <div className="flex flex-col justify-between items-center">
+          <p className="text-gray-400 text-center">
+            Drop some names with confidence
+          </p>
+          <p className="text-8xl">...</p>
+        </div>
+      </section>
+      <section className="flex flex-col justify-center items-center p-20 gap-12 min-h-screen">
+        <SectionHeading
+          text="Be part of the first wave of 
+                AI-native revenue teams."
+        />
+        <div className="flex flex-row gap-6 justify-center">
+          <button className="bg-white rounded px-3 py-2 transition-all duration-500 hover:bg-black hover:text-white">
+            Get early access
+          </button>
+          <button className="border rounded px-3 py-2 text-white transition-all duration-500 hover:bg-white hover:text-black hover:border-white">
+            Book a demo
+          </button>
+        </div>
+      </section>
+      <Footer />
     </div>
   );
 }
