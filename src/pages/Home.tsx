@@ -3,6 +3,7 @@ import SectionHeading from "../components/SectionHeading";
 import FeatureCard from "../components/FeatureCard";
 import holder from "../assets/images/holder.jpg";
 import LayerRow from "../components/LayerRow";
+import PeekCard from "../components/PeekCard";
 
 export default function Home() {
   return (
@@ -140,6 +141,47 @@ export default function Home() {
           buttonText="Another button"
           image={<div className="w-full h-full rounded-2xl bg-teal-200" />}
         />
+      </section>
+      <div className="flex justify-center items-center bg-[#0C1A2B]">
+        <SectionHeading text="Built for teams that run on conversations." />
+      </div>
+
+      <section className="flex flex-col px-12 py-32 gap-32 bg-[#0C1A2B] text-white min-h-screen">
+        <div className="flex flex-row gap-8 justify-center items-center">
+          <PeekCard
+            title="Lead Qualification"
+            description="Built for teams that run on conversations."
+            image={
+              <img
+                src={holder}
+                alt=""
+                className="w-full h-full object-cover rounded-t-xl"
+              />
+            }
+          />
+          <PeekCard
+          title="Lead Qualification"
+          description="Built for teams that run on conversations."
+          image={
+            <img
+              src={holder}
+              alt=""
+              className="w-full h-full object-cover rounded-t-xl"
+            />
+          }
+        />
+        <PeekCard
+          title="Lead Qualification"
+          description="Built for teams that run on conversations."
+          image={
+            <img
+              src={holder}
+              alt=""
+              className="w-full h-full object-cover rounded-t-xl"
+            />
+          }
+        />
+        </div>
       </section>
     </div>
   );
