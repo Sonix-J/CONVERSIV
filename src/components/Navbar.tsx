@@ -6,12 +6,12 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="relative flex items-center justify-between px-8 md:px-16 lg:px-32 h-20 md:h-24 bg-[#0C1A2B]">
+    <nav className="sticky top-0 z-50 flex items-center justify-between border-b border-gray-400 px-8 lg:px-32 h-20 bg-[#0C1A2B]">
       <Link to="/" className="flex items-center gap-2 font-semibold">
         <img src={logo} alt="Conversiv logo" className="h-50 w-auto" />
       </Link>
 
-      <ul className="hidden md:flex items-center gap-6 lg:gap-8 list-none">
+      <ul className="hidden lg:flex items-center gap-8 list-none">
         {[
           { to: "/", label: "Homepage" },
           { to: "/platform", label: "Platform" },
@@ -32,14 +32,14 @@ export default function Navbar() {
       </ul>
 
       <button
-        className="md:hidden text-2xl text-white"
+        className="lg:hidden text-2xl text-white"
         onClick={() => setMenuOpen(!menuOpen)}
       >
         {menuOpen ? "✕" : "☰"}
       </button>
 
       {menuOpen && (
-        <ul className="md:hidden absolute top-20 left-0 right-0 bg-[#0C1A2B] border-b border-gray-700 flex flex-col gap-4 px-8 py-6 list-none z-50">
+        <ul className="lg:hidden absolute top-20 left-0 right-0 bg-[#0C1A2B] border-b border-gray-700 flex flex-col gap-4 px-8 py-6 list-none z-50">
           {[
             { to: "/", label: "Home" },
             { to: "/platform", label: "Platform" },

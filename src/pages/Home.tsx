@@ -146,7 +146,7 @@ export default function Home() {
         <SectionHeading text="Built for teams that run on conversations." />
       </div>
       <section className="flex flex-col px-6 md:px-12 py-16 md:py-32 gap-8 bg-[#0C1A2B] text-white">
-        <div className="flex flex-col md:flex-row gap-8 justify-center items-center">
+        <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
           <PeekCard
             title="Lead Qualification"
             description="Built for teams that run on conversations."
