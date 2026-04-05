@@ -38,21 +38,35 @@ export default function Platform() {
             See how it works
           </button>
         </div>
+
+        <div className="absolute bottom-0 left-6 right-6 md:left-32 md:right-32">
+          <div className="rounded-t-2xl overflow-hidden h-24 md:h-32 border-t-12 border-l-12 border-r-12 border-white">
+            <img src={holder} alt="" className="w-full h-full object-cover" />
+          </div>
+        </div>
       </main>
 
-      <section className="flex flex-col px-6 md:px-32 py-16 md:py-32 gap-12 text-white min-h-screen">
+      <section className="flex flex-col px-6 md:px-32 py-16 md:py-32 gap-12 bg-[#0C1A2B] text-white min-h-screen">
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white font-bold">
           Built on a specialized language model with structured output and
           memory persistence.
         </h2>
         <div className="grid grid-cols-2 gap-4 md:gap-6 items-start">
           <div className="flex flex-col gap-4 md:gap-6">
-            <div className="rounded-2xl overflow-hidden h-48 md:h-80 lg:h-96 bg-gray-700" />
-            <div className="rounded-2xl overflow-hidden h-48 md:h-80 lg:h-96 bg-gray-700" />
+            <div className="rounded-2xl overflow-hidden h-48 md:h-80 lg:h-96">
+              <img src={holder} alt="" className="w-full h-full object-cover" />
+            </div>
+            <div className="rounded-2xl overflow-hidden h-48 md:h-80 lg:h-96">
+              <img src={holder} alt="" className="w-full h-full object-cover" />
+            </div>
           </div>
           <div className="flex flex-col gap-4 md:gap-6 mt-16 md:mt-24">
-            <div className="rounded-2xl overflow-hidden h-48 md:h-80 lg:h-96 bg-gray-700" />
-            <div className="rounded-2xl overflow-hidden h-48 md:h-80 lg:h-96 bg-gray-700" />
+            <div className="rounded-2xl overflow-hidden h-48 md:h-80 lg:h-96">
+              <img src={holder} alt="" className="w-full h-full object-cover" />
+            </div>
+            <div className="rounded-2xl overflow-hidden h-48 md:h-80 lg:h-96">
+              <img src={holder} alt="" className="w-full h-full object-cover" />
+            </div>
           </div>
         </div>
       </section>
