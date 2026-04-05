@@ -6,7 +6,7 @@ interface PeekCardProps {
 
 export default function PeekCard({ title, description, image }: PeekCardProps) {
   return (
-    <div className="flex flex-col bg-[#E5E5E5] rounded-t-2xl overflow-hidden w-full">
+    <div className="flex flex-col bg-[#E5E5E5] rounded-2xl overflow-hidden w-full">
       <div className="flex flex-col gap-2 p-4 md:p-6 shrink-0">
         <h3 className="text-base md:text-lg font-bold text-black">{title}</h3>
         <p className="text-xs md:text-sm text-gray-500">{description}</p>
