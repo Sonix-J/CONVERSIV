@@ -1,6 +1,7 @@
 import SectionHeading from "../components/SectionHeading";
 import FeatureCard from "../components/FeatureCard";
 import holder from "../assets/images/holder.jpg";
+import test from "../assets/images/test.jpg";
 import LayerRow from "../components/LayerRow";
 import PeekCard from "../components/PeekCard";
 import Footer from "../components/Footer";
@@ -116,27 +117,51 @@ export default function Home() {
           title="Conversational Layer"
           description="Real-time AI chatbot that engages and qualifies leads."
           buttonText="Call to action"
-          image={<div className="w-full h-full rounded-2xl bg-teal-200" />}
+          image={
+            <img
+              src={test}
+              alt="holder"
+              className="w-full h-full object-cover"
+            />
+          }
           reverse
         />
         <LayerRow
           title="Intelligence Layer"
           description="Native GPT that understands intent, context, and behavior."
           buttonText="Another button"
-          image={<div className="w-full h-full rounded-2xl bg-teal-200" />}
+          image={
+            <img
+              src={test}
+              alt="holder"
+              className="w-full h-full object-cover"
+            />
+          }
         />
         <LayerRow
           title="Memory Layer"
           description="CRM + Knowledge Base that stores and structures every interaction."
           buttonText="Call to action"
-          image={<div className="w-full h-full rounded-2xl bg-teal-200" />}
+          image={
+            <img
+              src={test}
+              alt="holder"
+              className="w-full h-full object-cover"
+            />
+          }
           reverse
         />
         <LayerRow
           title="Action Layer"
           description="Automated workflows that move deals forward."
           buttonText="Another button"
-          image={<div className="w-full h-full rounded-2xl bg-teal-200" />}
+          image={
+            <img
+              src={test}
+              alt="holder"
+              className="w-full h-full object-cover"
+            />
+          }
         />
       </section>
 
@@ -194,7 +219,20 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col justify-center items-center p-8 md:p-20 gap-8 md:gap-12 min-h-screen">
+      <section
+        style={{
+          background: "#1a5f72",
+          backgroundImage: `
+      radial-gradient(ellipse at 50% 50%, #0C1A2B 0%, transparent 60%),
+      radial-gradient(ellipse at 20% 20%, #A0E6FF 0%, transparent 45%),
+      radial-gradient(ellipse at 80% 10%, #2a4a3a 0%, transparent 40%),
+      radial-gradient(ellipse at 60% 60%, #0e8a9a 0%, transparent 40%),
+      radial-gradient(ellipse at 10% 80%, #0C1A2B 0%, transparent 50%),
+      radial-gradient(ellipse at 90% 80%, #E5E5E5 0%, transparent 35%)
+    `,
+        }}
+        className="flex flex-col justify-center items-center p-8 md:p-20 gap-8 md:gap-12 min-h-screen"
+      >
         <SectionHeading text="Be part of the first wave of AI-native revenue teams." />
         <div className="flex flex-row gap-4 md:gap-6 justify-center">
           <button className="bg-white rounded px-3 py-2 text-sm md:text-base transition-all duration-500 hover:bg-black hover:text-white">
