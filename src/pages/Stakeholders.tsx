@@ -40,7 +40,7 @@ export default function Stakeholders() {
             { name: "Isa Adriatico", year: 2025 },
             { name: "Harpreet Singh", year: 2025 },
           ].map((member) => (
-            <div key={member.name} className="flex flex-col gap-2">
+            <div key={member.name} className="flex flex-col gap-6">
               <div className="rounded-2xl overflow-hidden aspect-video w-full">
                 <img
                   src={holder}
@@ -48,8 +48,8 @@ export default function Stakeholders() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="flex justify-between px-1">
-                <p className="font-semibold">{member.name}</p>
+              <div className="flex justify-between items-end px-1">
+                <p className="font-semibold text-2xl">{member.name}</p>
                 <p className="text-white/50">{member.year}</p>
               </div>
             </div>
