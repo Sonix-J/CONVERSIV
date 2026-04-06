@@ -38,8 +38,8 @@ export default function UseCase() {
       </main>
       <section className="flex flex-col justify-between px-6 md:px-12 py-16 md:py-32 gap-16 md:gap-32 text-white min-h-screen">
         <LayerRow 
-          title="Use Case 1: Increasing Lead Conversion"
-          problem="Leads come in 24/7—but follow-ups are slow, inconsistent, or missed entirely"
+          title="Real Estate"
+          problem="Leads come in 24/7—but follow-ups are slow, inconsistent, or missed entirely."
           solution="Conversiv qualifies buyers instantly, captures intent, and routes high-value prospects in real time"
           outcome="Faster response. Higher conversions. No lost opportunities."
           image={
@@ -51,10 +51,10 @@ export default function UseCase() {
           }
         />
         <LayerRow 
-          title="Use Case 1: Increasing Lead Conversion"
-          problem="Leads come in 24/7—but follow-ups are slow, inconsistent, or missed entirely"
-          solution="Conversiv qualifies buyers instantly, captures intent, and routes high-value prospects in real time"
-          outcome="Faster response. Higher conversions. No lost opportunities."
+          title="SaaS"
+          problem="Inbound leads lack context, and sales teams waste time chasing low-intent prospects."
+          solution="Conversiv scores, enriches, and prioritizes every lead based on real-time signals and behavior."
+          outcome="Smarter pipeline. Shorter sales cycles. Better close rates."
           image={
             <img
               src={test}
@@ -65,10 +65,10 @@ export default function UseCase() {
           reverse
         />
         <LayerRow 
-          title="Use Case 1: Increasing Lead Conversion"
-          problem="Leads come in 24/7—but follow-ups are slow, inconsistent, or missed entirely"
-          solution="Conversiv qualifies buyers instantly, captures intent, and routes high-value prospects in real time"
-          outcome="Faster response. Higher conversions. No lost opportunities."
+          title="Agencies"
+          problem="Managing multiple clients means fragmented data, missed insights, and inconsistent follow-ups."
+          solution="Conversiv centralizes conversations, tracks intent, and automates engagement across accounts."
+          outcome="Scalable operations. Clear visibility. Stronger client results."
           image={
             <img
               src={test}
