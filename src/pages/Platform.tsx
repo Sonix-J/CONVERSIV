@@ -1,6 +1,9 @@
 import FeatureCard from "../components/FeatureCard";
 import Footer from "../components/Footer";
 import holder from "../assets/images/holder.jpg";
+import flowCapture from "../assets/images/flow-capture.png";
+import flowUnderstand from "../assets/images/flow-understand.png";
+import flowAct from "../assets/images/flow-act.png";
 
 export default function Platform() {
   return (
@@ -78,7 +81,7 @@ export default function Platform() {
             description="Engage every visitor with intelligent, real-time conversations that qualify intent instantly."
             image={
               <img
-                src={holder}
+                src={flowCapture}
                 alt="holder"
                 className="w-full h-full object-cover"
               />
@@ -89,7 +92,7 @@ export default function Platform() {
             description="Your AI builds memory across conversations. Learning context, behavior, and signals over time."
             image={
               <img
-                src={holder}
+                src={flowUnderstand}
                 alt="holder"
                 className="w-full h-full object-cover"
               />
@@ -100,7 +103,7 @@ export default function Platform() {
             description="Automatically route, prioritize, and follow up so no opportunity is ever lost."
             image={
               <img
-                src={holder}
+                src={flowAct}
                 alt="holder"
                 className="w-full h-full object-cover"
               />

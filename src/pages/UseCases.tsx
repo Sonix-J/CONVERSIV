@@ -1,7 +1,10 @@
 import Footer from "../components/Footer";
 import LayerRow from "../components/LayerRow";
 // import holder from "../assets/images/holder.jpg";
-import test from "../assets/images/test.jpg";
+// import test from "../assets/images/test.jpg";
+import usecaseAgencies from "../assets/images/usecase-agencies.png";
+import usecaseRealEstate from "../assets/images/usecase-real-estate.png";
+import usecaseSaaS from "../assets/images/usecase-saas.png";
 
 export default function UseCase() {
   return (
@@ -44,7 +47,7 @@ export default function UseCase() {
           outcome="Faster response. Higher conversions. No lost opportunities."
           image={
             <img
-              src={test}
+              src={usecaseRealEstate}
               alt="holder"
               className="w-full h-full object-cover"
             />
@@ -57,7 +60,7 @@ export default function UseCase() {
           outcome="Smarter pipeline. Shorter sales cycles. Better close rates."
           image={
             <img
-              src={test}
+              src={usecaseSaaS}
               alt="holder"
               className="w-full h-full object-cover"
             />
@@ -71,7 +74,7 @@ export default function UseCase() {
           outcome="Scalable operations. Clear visibility. Stronger client results."
           image={
             <img
-              src={test}
+              src={usecaseAgencies}
               alt="holder"
               className="w-full h-full object-cover"
             />

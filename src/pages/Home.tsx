@@ -1,10 +1,15 @@
 import SectionHeading from "../components/SectionHeading";
 import FeatureCard from "../components/FeatureCard";
-import holder from "../assets/images/holder.jpg";
-import test from "../assets/images/test.jpg";
 import LayerRow from "../components/LayerRow";
 import PeekCard from "../components/PeekCard";
 import Footer from "../components/Footer";
+
+import holder from "../assets/images/holder.jpg";
+import test from "../assets/images/test.jpg";
+import usecaseAgencies from "../assets/images/usecase-agencies.png";
+import flowCapture from "../assets/images/flow-capture.png";
+import flowUnderstand from "../assets/images/flow-understand.png";
+import flowAct from "../assets/images/flow-act.png";
 
 export default function Home() {
   return (
@@ -63,7 +68,11 @@ export default function Home() {
               <div className="w-3 h-3 rounded-full bg-yellow-500" />
               <div className="w-3 h-3 rounded-full bg-green-500" />
             </div>
-            <div className="w-full h-60 md:h-80 bg-gray-700" />
+            <img
+              src={usecaseAgencies}
+              alt=""
+              className="w-full h-60 md:h-80 object-cover"
+            />
           </div>
         </div>
       </section>
@@ -78,7 +87,7 @@ export default function Home() {
             description="Engage every visitor with intelligent, real-time conversations that qualify intent instantly."
             image={
               <img
-                src={holder}
+                src={flowCapture}
                 alt="holder"
                 className="w-full h-full object-cover"
               />
@@ -89,7 +98,7 @@ export default function Home() {
             description="Your AI builds memory across conversations. Learning context, behavior, and signals over time."
             image={
               <img
-                src={holder}
+                src={flowUnderstand}
                 alt="holder"
                 className="w-full h-full object-cover"
               />
@@ -100,7 +109,7 @@ export default function Home() {
             description="Automatically route, prioritize, and follow up so no opportunity is ever lost."
             image={
               <img
-                src={holder}
+                src={flowAct}
                 alt="holder"
                 className="w-full h-full object-cover"
               />
