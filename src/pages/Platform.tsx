@@ -1,9 +1,9 @@
 import FeatureCard from "../components/FeatureCard";
 import Footer from "../components/Footer";
 import holder from "../assets/images/holder.jpg";
-import flowCapture from "../assets/images/flow-capture.png";
-import flowUnderstand from "../assets/images/flow-understand.png";
-import flowAct from "../assets/images/flow-act.png";
+import flowCapture from "../assets/images/flowCapture.png";
+import flowUnderstand from "../assets/images/flowUnderstand.png";
+import flowAct from "../assets/images/flowAct.png";
 
 export default function Platform() {
   return (

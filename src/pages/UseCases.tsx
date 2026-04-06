@@ -2,9 +2,9 @@ import Footer from "../components/Footer";
 import LayerRow from "../components/LayerRow";
 // import holder from "../assets/images/holder.jpg";
 // import test from "../assets/images/test.jpg";
-import usecaseAgencies from "../assets/images/usecase-agencies.png";
-import usecaseRealEstate from "../assets/images/usecase-real-estate.png";
-import usecaseSaaS from "../assets/images/usecase-saas.png";
+import usecaseAgencies from "../assets/images/usecaseAgencies.png";
+import usecaseRealEstate from "../assets/images/usecaseRealEstate.png";
+import usecaseSaaS from "../assets/images/usecaseSaaS.png";
 
 export default function UseCase() {
   return (
