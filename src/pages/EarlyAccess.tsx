@@ -31,15 +31,13 @@ export default function EarlyAccess() {
           </div>
         </div>
 
-        <div
-          className="flex items-center bg-white gap-2 px-2 py-2 pl-4 rounded-full w-full max-w-sm md:max-w-md"
-        >
+        <div className="flex items-center bg-white gap-2 px-2 py-2 pl-4 rounded-full w-full max-w-sm md:max-w-md">
           <input
             type="email"
             placeholder="Enter your email"
             className="flex-1 bg-transparent border-none outline-none placeholder:text-gray-400 text-sm"
           />
-          <button className="bg-black transition-all duration-500 hover:bg-white hover:text-black hover:border text-white text-sm font-medium px-5 py-2.5 rounded-full whitespace-nowrap">
+          <button className="bg-black transition-all duration-500 hover:bg-white hover:text-black border border-transparent hover:border-black text-white text-sm font-medium px-5 py-2.5 rounded-full whitespace-nowrap">
             Get early access
           </button>
         </div>

@@ -8,7 +8,11 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 flex items-center justify-between border-b border-gray-400 px-8 lg:px-32 h-20 bg-[#0C1A2B]">
       <Link to="/" className="flex items-center gap-2 font-semibold">
-        <img src={logo} alt="Conversiv logo" className="h-50 w-auto" />
+        <img
+          src={logo}
+          alt="Conversiv logo"
+          style={{ height: "200px", width: "auto" }}
+        />
       </Link>
 
       <ul className="hidden lg:flex items-center gap-8 list-none">
@@ -52,7 +56,7 @@ export default function Navbar() {
               <Link
                 to={to}
                 onClick={() => setMenuOpen(false)}
-                className="text-gray-300 hover:text-white"
+                className="text-gray-300 hover:text-white transition-colors"
               >
                 {label}
               </Link>
