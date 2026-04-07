@@ -6,6 +6,7 @@ import Platform from "./pages/Platform";
 import UseCase from "./pages/UseCases";
 import Stakeholders from "./pages/Stakeholders";
 import About from "./pages/About";
+import EarlyAccess from "./pages/EarlyAccess";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
         <Route path="/usecase" element={<UseCase />} />
         <Route path="/stakeholders" element={<Stakeholders />} />
         <Route path="/about" element={<About />} />
+        <Route path="/earlyaccess" element={<EarlyAccess />} />
       </Routes>
     </>
   );
