@@ -7,13 +7,16 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 flex items-center justify-between border-b border-gray-400 px-8 lg:px-32 h-20 bg-[#0C1A2B]">
-      <Link to="/" className="flex items-center gap-2 font-semibold">
+      <div
+        className="flex items-center gap-2 font-semibold cursor-pointer"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      >
         <img
           src={logo}
           alt="Conversiv logo"
           style={{ height: "200px", width: "auto" }}
         />
-      </Link>
+      </div>
 
       <ul className="hidden lg:flex items-center gap-8 list-none">
         {[
