@@ -16,7 +16,6 @@ import leadQualification from "../assets/icons/leadQualification.png";
 import customerIntelligence from "../assets/icons/customerIntelligence.png";
 import salesAutomation from "../assets/icons/salesAutomation.png";
 
-// Custom hook for scroll animation
 function useScrollAnimation() {
   const controls = useAnimation();
   const ref = useRef(null);

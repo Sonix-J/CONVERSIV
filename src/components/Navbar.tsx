@@ -1,9 +1,14 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/icons/logo.svg";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+
+  const isActive = (path) => {
+    return location.pathname === path;
+  };
 
   return (
     <nav className="sticky top-0 z-50 flex items-center justify-between border-b border-gray-400 px-8 lg:px-32 h-20 bg-[#0C1A2B]">
@@ -30,9 +35,16 @@ export default function Navbar() {
           <li key={to}>
             <Link
               to={to}
-              className="text-sm text-white hover:text-gray-300 transition-colors"
+              className="relative text-sm text-white hover:text-gray-300 transition-colors group pb-1"
             >
               {label}
+              <span
+                className={`absolute bottom-0 left-0 h-0.5 bg-white transition-all duration-300 ease-in-out ${
+                  isActive(to)
+                    ? "w-full"
+                    : "w-0 group-hover:w-full group-hover:left-0"
+                }`}
+              />
             </Link>
           </li>
         ))}
@@ -59,9 +71,16 @@ export default function Navbar() {
               <Link
                 to={to}
                 onClick={() => setMenuOpen(false)}
-                className="text-gray-300 hover:text-white transition-colors"
+                className="relative text-gray-300 hover:text-white transition-colors group inline-block pb-1"
               >
                 {label}
+                <span
+                  className={`absolute bottom-0 left-0 h-0.5 bg-white transition-all duration-300 ease-in-out ${
+                    isActive(to)
+                      ? "w-full"
+                      : "w-0 group-hover:w-full group-hover:left-0"
+                  }`}
+                />
               </Link>
             </li>
           ))}
