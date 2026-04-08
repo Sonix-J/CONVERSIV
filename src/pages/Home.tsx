@@ -12,6 +12,9 @@ import usecaseAgencies from "../assets/images/usecaseAgencies.png";
 import flowCapture from "../assets/images/flowCapture.png";
 import flowUnderstand from "../assets/images/flowUnderstand.png";
 import flowAct from "../assets/images/flowAct.png";
+import leadQualification from "../assets/icons/leadQualification.png";
+import customerIntelligence from "../assets/icons/customerIntelligence.png";
+import salesAutomation from "../assets/icons/salesAutomation.png";
 
 // Custom hook for scroll animation
 function useScrollAnimation() {
@@ -308,8 +311,8 @@ export default function Home() {
                 description="Built for teams that run on conversations."
                 image={
                   <img
-                    src={holder}
-                    alt=""
+                    src={leadQualification}
+                    alt="Lead Qualification"
                     className="w-full h-full object-cover rounded-t-xl"
                   />
                 }
@@ -321,12 +324,12 @@ export default function Home() {
               className="w-full"
             >
               <PeekCard
-                title="Lead Qualification"
-                description="Built for teams that run on conversations."
+                title="Sales Automation"
+                description="Follow up without lifting a finger."
                 image={
                   <img
-                    src={holder}
-                    alt=""
+                    src={salesAutomation}
+                    alt="Sales Automation"
                     className="w-full h-full object-cover rounded-t-xl"
                   />
                 }
@@ -338,12 +341,12 @@ export default function Home() {
               className="w-full"
             >
               <PeekCard
-                title="Lead Qualification"
-                description="Built for teams that run on conversations."
+                title="Customer Intelligence"
+                description="Turn conversations into structured insights"
                 image={
                   <img
-                    src={holder}
-                    alt=""
+                    src={customerIntelligence}
+                    alt="Customer Intelligence"
                     className="w-full h-full object-cover rounded-t-xl"
                   />
                 }
