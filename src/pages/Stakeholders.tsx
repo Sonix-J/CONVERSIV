@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import holder from "../assets/images/holder.jpg";
 import Sharmaine from "../assets/images/Profile/Sharmaine.jpg";
 import Isa from "../assets/images/Profile/Isa.jpg";
+import Harpeet from "../assets/images/Profile/Harpeet.jpg";
 
 function useScrollAnimation() {
   const controls = useAnimation();
@@ -77,7 +78,7 @@ export default function Stakeholders() {
       name: "Harpreet Singh",
       role: "Chief Strategy Officer",
       bio: "Leading market strategy and growth, translating vision into scalable business outcomes.",
-      image: holder,
+      image: Harpeet,
     },
   ];
 
