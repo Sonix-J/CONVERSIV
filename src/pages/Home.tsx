@@ -15,11 +15,10 @@ import leadQualification from "../assets/icons/leadQualification.png";
 import customerIntelligence from "../assets/icons/customerIntelligence.png";
 import salesAutomation from "../assets/icons/salesAutomation.png";
 
-// ✅ GIF imports
-import conversationLayer from "../assets/motions/conversationLayer.gif";
-import intelligenceLayer from "../assets/motions/intelligenceLayer.gif";
-import memoryLayer from "../assets/motions/memoryLayer.gif";
-import actionLayer from "../assets/motions/actionLayer.gif";
+import conversationLayer from "../assets/motions/conversationLayer.mp4";
+import intelligenceLayer from "../assets/motions/intelligenceLayer.mp4";
+import memoryLayer from "../assets/motions/memoryLayer.mp4";
+import actionLayer from "../assets/motions/actionLayer.mp4";
 
 function useScrollAnimation() {
   const controls = useAnimation();
@@ -219,11 +218,15 @@ export default function Home() {
               description="Real-time AI chatbot that engages and qualifies leads."
               buttonText="Call to action"
               image={
-                <img
-                  src={conversationLayer}
-                  alt="Conversational Layer"
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                   className="w-full h-full object-cover"
-                />
+                >
+                  <source src={conversationLayer} type="video/mp4" />
+                </video>
               }
               reverse
             />
@@ -240,11 +243,15 @@ export default function Home() {
               description="Native GPT that understands intent, context, and behavior."
               buttonText="Another button"
               image={
-                <img
-                  src={intelligenceLayer}
-                  alt="Intelligence Layer"
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                   className="w-full h-full object-cover"
-                />
+                >
+                  <source src={intelligenceLayer} type="video/mp4" />
+                </video>
               }
             />
           </motion.div>
@@ -260,11 +267,15 @@ export default function Home() {
               description="CRM + Knowledge Base that stores and structures every interaction."
               buttonText="Call to action"
               image={
-                <img
-                  src={memoryLayer}
-                  alt="Memory Layer"
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                   className="w-full h-full object-cover"
-                />
+                >
+                  <source src={memoryLayer} type="video/mp4" />
+                </video>
               }
               reverse
             />
@@ -281,11 +292,15 @@ export default function Home() {
               description="Automated workflows that move deals forward."
               buttonText="Another button"
               image={
-                <img
-                  src={actionLayer}
-                  alt="Action Layer"
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                   className="w-full h-full object-cover"
-                />
+                >
+                  <source src={actionLayer} type="video/mp4" />
+                </video>
               }
             />
           </motion.div>
