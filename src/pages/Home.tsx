@@ -7,7 +7,6 @@ import PeekCard from "../components/PeekCard";
 import Footer from "../components/Footer";
 
 import holder from "../assets/images/holder.jpg";
-import test from "../assets/images/test.jpg";
 import usecaseAgencies from "../assets/images/usecaseAgencies.png";
 import flowCapture from "../assets/images/flowCapture.png";
 import flowUnderstand from "../assets/images/flowUnderstand.png";
@@ -15,6 +14,12 @@ import flowAct from "../assets/images/flowAct.png";
 import leadQualification from "../assets/icons/leadQualification.png";
 import customerIntelligence from "../assets/icons/customerIntelligence.png";
 import salesAutomation from "../assets/icons/salesAutomation.png";
+
+// ✅ GIF imports
+import conversationLayer from "../assets/motions/conversationLayer.gif";
+import intelligenceLayer from "../assets/motions/intelligenceLayer.gif";
+import memoryLayer from "../assets/motions/memoryLayer.gif";
+import actionLayer from "../assets/motions/actionLayer.gif";
 
 function useScrollAnimation() {
   const controls = useAnimation();
@@ -215,8 +220,8 @@ export default function Home() {
               buttonText="Call to action"
               image={
                 <img
-                  src={test}
-                  alt="holder"
+                  src={conversationLayer}
+                  alt="Conversational Layer"
                   className="w-full h-full object-cover"
                 />
               }
@@ -236,8 +241,8 @@ export default function Home() {
               buttonText="Another button"
               image={
                 <img
-                  src={test}
-                  alt="holder"
+                  src={intelligenceLayer}
+                  alt="Intelligence Layer"
                   className="w-full h-full object-cover"
                 />
               }
@@ -256,8 +261,8 @@ export default function Home() {
               buttonText="Call to action"
               image={
                 <img
-                  src={test}
-                  alt="holder"
+                  src={memoryLayer}
+                  alt="Memory Layer"
                   className="w-full h-full object-cover"
                 />
               }
@@ -277,8 +282,8 @@ export default function Home() {
               buttonText="Another button"
               image={
                 <img
-                  src={test}
-                  alt="holder"
+                  src={actionLayer}
+                  alt="Action Layer"
                   className="w-full h-full object-cover"
                 />
               }
