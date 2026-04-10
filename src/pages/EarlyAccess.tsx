@@ -76,7 +76,7 @@ export default function EarlyAccess() {
         </motion.div>
 
         <motion.div
-          className="flex items-center bg-white gap-2 px-2 py-2 pl-4 rounded-full w-full max-w-sm md:max-w-md"
+          className="flex flex-col md:flex-row md:items-center md:bg-white gap-2 md:px-2 md:py-2 md:pl-4 md:rounded-full w-full max-w-sm md:max-w-md"
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.8 }}
@@ -84,7 +84,7 @@ export default function EarlyAccess() {
           <input
             type="email"
             placeholder="Enter your email"
-            className="flex-1 bg-transparent border-none outline-none placeholder:text-gray-400 text-sm"
+            className="flex-1 bg-white md:bg-transparent border border-gray-200 md:border-none rounded-full px-4 py-2.5 md:px-0 md:py-0 outline-none placeholder:text-gray-400 text-sm"
           />
           <button className="bg-black transition-all duration-500 hover:bg-white hover:text-black border border-transparent hover:border-black text-white text-sm font-medium px-5 py-2.5 rounded-full whitespace-nowrap">
             Get early access
