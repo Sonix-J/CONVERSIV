@@ -6,6 +6,10 @@ import holder from "../assets/images/holder.jpg";
 import flowCapture from "../assets/images/flowCapture.png";
 import flowUnderstand from "../assets/images/flowUnderstand.png";
 import flowAct from "../assets/images/flowAct.png";
+import conversationLayer from "../assets/motions/conversationLayer.mp4";
+import intelligenceLayer from "../assets/motions/intelligenceLayer.mp4";
+import memoryLayer from "../assets/motions/memoryLayer.mp4";
+import actionLayer from "../assets/motions/actionLayer.mp4";
 
 function ScrollSection({ children, direction = "up", delay = 0 }) {
   const ref = useRef(null);
@@ -117,43 +121,77 @@ export default function Platform() {
             memory persistence.
           </motion.h2>
 
-          <div className="grid grid-cols-2 gap-4 md:gap-6 items-start">
+          <div className="flex flex-col gap-4 md:hidden">
+            {[
+              conversationLayer,
+              intelligenceLayer,
+              memoryLayer,
+              actionLayer,
+            ].map((src, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 0.6, delay: i * 0.1, ease: "easeOut" }}
+                className="rounded-2xl overflow-hidden h-48"
+              >
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-full object-cover"
+                >
+                  <source src={src} type="video/mp4" />
+                </video>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="hidden md:grid grid-cols-2 gap-4 md:gap-6 items-start">
             <div className="flex flex-col gap-4 md:gap-6">
-              {[0, 1].map((i) => (
+              {[conversationLayer, intelligenceLayer].map((src, i) => (
                 <motion.div
                   key={i}
                   initial={{ x: -100, opacity: 0 }}
                   whileInView={{ x: 0, opacity: 1 }}
                   viewport={{ once: true, amount: 0.3 }}
                   transition={{ duration: 0.8, ease: "easeOut" }}
-                  whileHover={{ scale: 1.02 }}
                   className="rounded-2xl overflow-hidden h-48 md:h-80 lg:h-96"
                 >
-                  <img
-                    src={holder}
-                    alt=""
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
                     className="w-full h-full object-cover"
-                  />
+                  >
+                    <source src={src} type="video/mp4" />
+                  </video>
                 </motion.div>
               ))}
             </div>
 
             <div className="flex flex-col gap-4 md:gap-6 mt-16 md:mt-24">
-              {[0, 1].map((i) => (
+              {[memoryLayer, actionLayer].map((src, i) => (
                 <motion.div
                   key={i}
                   initial={{ x: 100, opacity: 0 }}
                   whileInView={{ x: 0, opacity: 1 }}
                   viewport={{ once: true, amount: 0.3 }}
                   transition={{ duration: 0.8, ease: "easeOut" }}
-                  whileHover={{ scale: 1.02 }}
                   className="rounded-2xl overflow-hidden h-48 md:h-80 lg:h-96"
                 >
-                  <img
-                    src={holder}
-                    alt=""
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
                     className="w-full h-full object-cover"
-                  />
+                  >
+                    <source src={src} type="video/mp4" />
+                  </video>
                 </motion.div>
               ))}
             </div>

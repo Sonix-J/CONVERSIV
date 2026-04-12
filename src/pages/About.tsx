@@ -3,6 +3,7 @@ import { motion, useAnimation, useInView } from "framer-motion";
 import FeatureCard from "../components/FeatureCard";
 import Footer from "../components/Footer";
 import holder from "../assets/images/holder.jpg";
+import about from "../assets/motions/about.mp4";
 
 function ScrollSection({ children, direction = "up", delay = 0 }) {
   const ref = useRef(null);
@@ -91,44 +92,17 @@ export default function About() {
       </motion.main>
 
       <ScrollSection direction="up">
-        <section className="flex flex-col justify-between px-6 py-16 md:py-32 text-white">
-          <div className="flex flex-col md:flex-row gap-4 justify-center items-start">
-            <FeatureCard
-              image={
-                <img
-                  src={holder}
-                  alt="holder"
-                  className="w-full h-full object-cover"
-                />
-              }
-            />
-            <FeatureCard
-              image={
-                <img
-                  src={holder}
-                  alt="holder"
-                  className="w-full h-full object-cover"
-                />
-              }
-            />
-            <FeatureCard
-              image={
-                <img
-                  src={holder}
-                  alt="holder"
-                  className="w-full h-full object-cover"
-                />
-              }
-            />
-            <FeatureCard
-              image={
-                <img
-                  src={holder}
-                  alt="holder"
-                  className="w-full h-full object-cover"
-                />
-              }
-            />
+        <section className="px-6 py-16 md:px-64 md:py-32">
+          <div className="w-full rounded-2xl overflow-hidden">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-auto block"
+            >
+              <source src={about} type="video/mp4" />
+            </video>
           </div>
         </section>
       </ScrollSection>
