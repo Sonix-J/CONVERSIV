@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import holder from "../assets/images/holder.jpg";
 import Sharmaine from "../assets/images/Profile/Sharmaine.jpg";
 import Isa from "../assets/images/Profile/Isa.jpg";
-import Harpeet from "../assets/images/Profile/Harpeet.jpg";
+import Joe from "../assets/images/Profile/Joe.jpeg";
 
 function useScrollAnimation() {
   const controls = useAnimation();
@@ -63,12 +63,6 @@ export default function Stakeholders() {
       image: Sharmaine,
     },
     {
-      name: "Joe Ocaba",
-      role: "Chief Technology Officer ",
-      bio: "Systems architect driving scalable, AI-native infrastructure and executions.",
-      image: holder,
-    },
-    {
       name: "Isa Adriatico",
       role: "Founding Engineer",
       bio: "Engineering the core intelligence layer powering Conversiv's learning and performance.",
@@ -78,7 +72,7 @@ export default function Stakeholders() {
       name: "Harpreet Singh",
       role: "Chief Strategy Officer",
       bio: "Leading market strategy and growth, translating vision into scalable business outcomes.",
-      image: Harpeet,
+      image: Joe,
     },
   ];
 
@@ -125,18 +119,18 @@ export default function Stakeholders() {
             Core Team
           </motion.h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
             {members.map((member, index) => (
               <motion.div
                 key={member.name}
-                className="flex flex-col gap-6"
+                className="flex flex-col gap-4"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
               >
                 <motion.div
-                  className="rounded-2xl overflow-hidden w-full aspect-square"
+                  className="rounded-2xl overflow-hidden w-full aspect-[3/4]"
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3 }}
                 >
@@ -153,10 +147,9 @@ export default function Stakeholders() {
                   viewport={{ once: true, amount: 0.3 }}
                   transition={{ duration: 0.6, delay: index * 0.1 + 0.2 }}
                 >
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
-                    <p className="font-semibold text-2xl">{member.name}</p>
-                    <span className="hidden sm:block">—</span>
-                    <p className="text-white font-bold text-2xl">
+                  <div className="flex flex-col gap-1">
+                    <p className="font-semibold text-xl">{member.name}</p>
+                    <p className="text-white font-bold text-lg">
                       {member.role}
                     </p>
                   </div>

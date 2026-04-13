@@ -95,17 +95,6 @@ export default function Platform() {
             See how it works
           </button>
         </motion.div>
-
-        <motion.div
-          className="absolute bottom-0 left-6 right-6 md:left-32 md:right-32"
-          initial={{ opacity: 0, y: 60 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-        >
-          <div className="rounded-t-2xl overflow-hidden h-24 md:h-32 border-t-12 border-l-12 border-r-12 border-white">
-            <img src={holder} alt="" className="w-full h-full object-cover" />
-          </div>
-        </motion.div>
       </motion.main>
 
       <ScrollSection direction="up">
