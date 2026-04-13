@@ -3,7 +3,7 @@ import { motion, useAnimation, useInView } from "framer-motion";
 import FeatureCard from "../components/FeatureCard";
 import Footer from "../components/Footer";
 import holder from "../assets/images/holder.jpg";
-import about from "../assets/motions/about.mp4";
+import about from "../assets/motions/About.mp4";
 
 function ScrollSection({ children, direction = "up", delay = 0 }) {
   const ref = useRef(null);
