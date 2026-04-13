@@ -130,7 +130,7 @@ export default function Stakeholders() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
               >
                 <motion.div
-                  className="rounded-2xl overflow-hidden w-full aspect-[3/4]"
+                  className="rounded-2xl overflow-hidden w-full aspect-3/4"
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3 }}
                 >
