@@ -69,9 +69,9 @@ export default function Stakeholders() {
       image: Isa,
     },
     {
-      name: "Harpreet Singh",
-      role: "Chief Strategy Officer",
-      bio: "Leading market strategy and growth, translating vision into scalable business outcomes.",
+      name: "Joe Ocaba",
+      role: "Chief Technology Officer",
+      bio: "Systems architect driving scalable, AI-native infrastructure and execution.",
       image: Joe,
     },
   ];
