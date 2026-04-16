@@ -382,7 +382,7 @@ export default function Home() {
             industries.
           </h2>
           <div className="flex flex-col justify-between items-center gap-4">
-            <p className="text-gray-400 text-center">
+            {/* <p className="text-gray-400 text-center">
               Drop some names with confidence
             </p>
             <motion.p
@@ -398,7 +398,7 @@ export default function Home() {
               }}
             >
               ...
-            </motion.p>
+            </motion.p> */}
           </div>
         </section>
       </ScrollSection>
