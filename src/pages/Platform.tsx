@@ -10,6 +10,7 @@ import conversationLayer from "../assets/motions/conversationLayer.mp4";
 import intelligenceLayer from "../assets/motions/intelligenceLayer.mp4";
 import memoryLayer from "../assets/motions/memoryLayer.mp4";
 import actionLayer from "../assets/motions/actionLayer.mp4";
+import { Link } from "react-router-dom";
 
 function ScrollSection({ children, direction = "up", delay = 0 }) {
   const ref = useRef(null);
@@ -88,12 +89,16 @@ export default function Platform() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.8 }}
         >
-          <button className="bg-white rounded px-3 py-2 text-sm md:text-base transition-all duration-500 hover:bg-black hover:text-white">
-            Get early access
-          </button>
-          <button className="border rounded px-3 py-2 text-sm md:text-base text-white transition-all duration-500 hover:bg-white hover:text-black hover:border-white">
-            See how it works
-          </button>
+          <Link to="/earlyaccess">
+            <button className="bg-white rounded px-3 py-2 text-sm md:text-base transition-all duration-500 hover:bg-black hover:text-white">
+              Get early access
+            </button>
+          </Link>
+          <Link to="/about">
+            <button className="border rounded px-3 py-2 text-sm md:text-base text-white transition-all duration-500 hover:bg-white hover:text-black hover:border-white">
+              See how it works
+            </button>
+          </Link>
         </motion.div>
       </motion.main>
 

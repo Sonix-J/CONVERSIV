@@ -1,7 +1,6 @@
 interface LayerRowProps {
   title: string;
   description?: string;
-  buttonText?: string;
   image: React.ReactNode;
   reverse?: boolean;
   problem?: string;
@@ -12,7 +11,6 @@ interface LayerRowProps {
 export default function LayerRow({
   title,
   description,
-  buttonText,
   image,
   reverse,
   problem,
@@ -30,11 +28,6 @@ export default function LayerRow({
         <h3 className="text-xl md:text-2xl font-bold">{title}</h3>
 
         {description && <p className="text-gray-400">{description}</p>}
-        {buttonText && (
-          <button className="bg-black text-white px-4 py-2 rounded-lg w-fit transition-all duration-500 hover:bg-white hover:text-black">
-            {buttonText}
-          </button>
-        )}
 
         {problem && (
           <div className="flex flex-col gap-1">

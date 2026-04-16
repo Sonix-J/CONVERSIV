@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
+import { Link } from "react-router-dom";
 import SectionHeading from "../components/SectionHeading";
 import FeatureCard from "../components/FeatureCard";
 import LayerRow from "../components/LayerRow";
@@ -76,12 +77,16 @@ export default function Home() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.8 }}
         >
-          <button className="bg-white rounded px-3 py-2 text-sm md:text-base transition-all duration-500 hover:bg-black hover:text-white">
-            Get early access
-          </button>
-          <button className="border rounded px-3 py-2 text-sm md:text-base text-white transition-all duration-500 hover:bg-white hover:text-black hover:border-white">
-            See how it works
-          </button>
+          <Link to="/earlyaccess">
+            <button className="bg-white rounded px-3 py-2 text-sm md:text-base cursor-pointer transition-all duration-500 hover:bg-black hover:text-white">
+              Get early access
+            </button>
+          </Link>
+          <Link to="/platform">
+            <button className="border rounded px-3 py-2 text-sm md:text-base text-white cursor-pointer transition-all duration-500 hover:bg-white hover:text-black hover:border-white">
+              See how it works
+            </button>
+          </Link>
         </motion.div>
       </motion.main>
 
@@ -216,7 +221,6 @@ export default function Home() {
             <LayerRow
               title="Conversational Layer"
               description="Real-time AI chatbot that engages and qualifies leads."
-              buttonText="Call to action"
               image={
                 <video
                   autoPlay
@@ -241,7 +245,6 @@ export default function Home() {
             <LayerRow
               title="Intelligence Layer"
               description="Native GPT that understands intent, context, and behavior."
-              buttonText="Another button"
               image={
                 <video
                   autoPlay
@@ -265,7 +268,6 @@ export default function Home() {
             <LayerRow
               title="Memory Layer"
               description="CRM + Knowledge Base that stores and structures every interaction."
-              buttonText="Call to action"
               image={
                 <video
                   autoPlay
@@ -290,7 +292,6 @@ export default function Home() {
             <LayerRow
               title="Action Layer"
               description="Automated workflows that move deals forward."
-              buttonText="Another button"
               image={
                 <video
                   autoPlay
@@ -436,12 +437,11 @@ export default function Home() {
           viewport={{ once: true }}
           transition={{ delay: 0.2, duration: 0.6 }}
         >
-          <button className="bg-white rounded px-3 py-2 text-sm md:text-base transition-all duration-500 hover:bg-black hover:text-white">
-            Get early access
-          </button>
-          <button className="border rounded px-3 py-2 text-sm md:text-base text-white transition-all duration-500 hover:bg-white hover:text-black hover:border-white">
-            Book a demo
-          </button>
+          <Link to="/earlyaccess">
+            <button className="bg-white rounded px-3 py-2 text-sm md:text-base transition-all duration-500 hover:bg-black hover:text-white">
+              Get early access
+            </button>
+          </Link>
         </motion.div>
       </motion.section>
 

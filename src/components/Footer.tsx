@@ -36,7 +36,7 @@ export default function Footer() {
           </a>
         </div>
 
-        <div className="flex flex-row flex-wrap gap-8 md:gap-16">
+        {/* <div className="flex flex-row flex-wrap gap-8 md:gap-16">
           <div className="flex flex-col gap-4">
             <h4 className="font-bold">Features</h4>
             <a
@@ -106,7 +106,7 @@ export default function Footer() {
               Legal
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

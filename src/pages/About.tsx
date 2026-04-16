@@ -76,19 +76,6 @@ export default function About() {
             </p>
           </div>
         </motion.div>
-        <motion.div
-          className="flex flex-row gap-4 md:gap-6 justify-center"
-          initial={{ y: 30, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.4, duration: 0.8 }}
-        >
-          <button className="bg-white rounded px-3 py-2 text-sm md:text-base transition-all duration-500 hover:bg-black hover:text-white">
-            Call to action
-          </button>
-          <button className="border rounded px-3 py-2 text-sm md:text-base text-white transition-all duration-500 hover:bg-white hover:text-black hover:border-white">
-            Secondary
-          </button>
-        </motion.div>
       </motion.main>
 
       <ScrollSection direction="up">
