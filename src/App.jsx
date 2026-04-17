@@ -7,6 +7,7 @@ import UseCase from "./pages/UseCases";
 import Stakeholders from "./pages/Stakeholders";
 import About from "./pages/About";
 import EarlyAccess from "./pages/EarlyAccess";
+import Chat from "./components/Chat";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/earlyaccess" element={<EarlyAccess />} />
       </Routes>
+      <Chat />
     </>
   );
 }
