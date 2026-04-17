@@ -3,7 +3,7 @@ import { motion, useAnimation, useInView } from "framer-motion";
 import Footer from "../components/Footer";
 import holder from "../assets/images/holder.jpg";
 import Sharmaine from "../assets/images/Profile/Sharmaine.jpg";
-import Isa from "../assets/images/Profile/Isa.jpg";
+import Isa from "../assets/images/Profile/Isa.jpeg";
 import Joe from "../assets/images/Profile/Joe.jpeg";
 
 function useScrollAnimation() {

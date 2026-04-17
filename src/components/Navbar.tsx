@@ -1,10 +1,11 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import logo from "../assets/icons/logo.svg";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
   const isActive = (path) => {
     return location.pathname === path;
@@ -14,7 +15,7 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 flex items-center justify-between border-b border-gray-400 px-8 lg:px-32 h-20 bg-[#0C1A2B]">
       <div
         className="flex items-center gap-2 font-semibold cursor-pointer"
-        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        onClick={() => navigate("/")}
       >
         <img
           src={logo}
