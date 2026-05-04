@@ -7,14 +7,13 @@ import LayerRow from "../components/LayerRow";
 import PeekCard from "../components/PeekCard";
 import Footer from "../components/Footer";
 
-import holder from "../assets/images/holder.jpg";
-import usecaseAgencies from "../assets/images/usecaseAgencies.png";
-import flowCapture from "../assets/images/flowCapture.png";
-import flowUnderstand from "../assets/images/flowUnderstand.png";
-import flowAct from "../assets/images/flowAct.png";
-import leadQualification from "../assets/icons/leadQualification.png";
-import customerIntelligence from "../assets/icons/customerIntelligence.png";
-import salesAutomation from "../assets/icons/salesAutomation.png";
+import usecaseAgencies from "../assets/images/usecaseAgencies.webp";
+import flowCapture from "../assets/images/flowCapture.webp";
+import flowUnderstand from "../assets/images/flowUnderstand.webp";
+import flowAct from "../assets/images/flowAct.webp";
+import leadQualification from "../assets/icons/leadQualification.webp";
+import customerIntelligence from "../assets/icons/customerIntelligence.webp";
+import salesAutomation from "../assets/icons/salesAutomation.webp";
 
 import conversationLayer from "../assets/motions/conversationLayer.mp4";
 import intelligenceLayer from "../assets/motions/intelligenceLayer.mp4";
@@ -383,23 +382,6 @@ export default function Home() {
             industries.
           </h2>
           <div className="flex flex-col justify-between items-center gap-4">
-            {/* <p className="text-gray-400 text-center">
-              Drop some names with confidence
-            </p>
-            <motion.p
-              className="text-6xl md:text-8xl"
-              animate={{
-                scale: [1, 1.2, 1],
-                opacity: [0.5, 1, 0.5],
-              }}
-              transition={{
-                duration: 2,
-                repeat: Infinity,
-                repeatType: "reverse",
-              }}
-            >
-              ...
-            </motion.p> */}
           </div>
         </section>
       </ScrollSection>
