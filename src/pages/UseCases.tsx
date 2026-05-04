@@ -2,9 +2,10 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import Footer from "../components/Footer";
 import LayerRow from "../components/LayerRow";
-import usecaseAgencies from "../assets/images/usecaseAgencies.png";
-import usecaseRealEstate from "../assets/images/usecaseRealEstate.png";
-import usecaseSaaS from "../assets/images/usecaseSaaS.png";
+
+import usecaseAgencies from "../assets/images/usecaseAgencies.webp";
+import usecaseRealEstate from "../assets/images/usecaseRealEstate.webp";
+import usecaseSaaS from "../assets/images/usecaseSaaS.webp";
 
 function ScrollSection({ children, direction = "up", delay = 0 }) {
   const ref = useRef(null);
