@@ -2,10 +2,11 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import FeatureCard from "../components/FeatureCard";
 import Footer from "../components/Footer";
-import holder from "../assets/images/holder.jpg";
-import flowCapture from "../assets/images/flowCapture.png";
-import flowUnderstand from "../assets/images/flowUnderstand.png";
-import flowAct from "../assets/images/flowAct.png";
+
+import flowCapture from "../assets/images/flowCapture.webp";
+import flowUnderstand from "../assets/images/flowUnderstand.webp";
+import flowAct from "../assets/images/flowAct.webp";
+
 import conversationLayer from "../assets/motions/conversationLayer.mp4";
 import intelligenceLayer from "../assets/motions/intelligenceLayer.mp4";
 import memoryLayer from "../assets/motions/memoryLayer.mp4";
