@@ -7,10 +7,10 @@ import flowCapture from "../assets/images/flowCapture.webp";
 import flowUnderstand from "../assets/images/flowUnderstand.webp";
 import flowAct from "../assets/images/flowAct.webp";
 
-import conversationLayer from "../assets/motions/conversationLayer.mp4";
-import intelligenceLayer from "../assets/motions/intelligenceLayer.mp4";
-import memoryLayer from "../assets/motions/memoryLayer.mp4";
-import actionLayer from "../assets/motions/actionLayer.mp4";
+import conversationLayer from "../assets/motions/conversationLayer.webm";
+import intelligenceLayer from "../assets/motions/intelligenceLayer.webm";
+import memoryLayer from "../assets/motions/memoryLayer.webm";
+import actionLayer from "../assets/motions/actionLayer.webm";
 import { Link } from "react-router-dom";
 
 function ScrollSection({ children, direction = "up", delay = 0 }) {

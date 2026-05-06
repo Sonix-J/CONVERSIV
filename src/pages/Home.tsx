@@ -15,10 +15,10 @@ import leadQualification from "../assets/icons/leadQualification.png";
 import customerIntelligence from "../assets/icons/customerIntelligence.png";
 import salesAutomation from "../assets/icons/salesAutomation.png";
 
-import conversationLayer from "../assets/motions/conversationLayer.mp4";
-import intelligenceLayer from "../assets/motions/intelligenceLayer.mp4";
-import memoryLayer from "../assets/motions/memoryLayer.mp4";
-import actionLayer from "../assets/motions/actionLayer.mp4";
+import conversationLayer from "../assets/motions/conversationLayer.webm";
+import intelligenceLayer from "../assets/motions/intelligenceLayer.webm";
+import memoryLayer from "../assets/motions/memoryLayer.webm";
+import actionLayer from "../assets/motions/actionLayer.webm";
 
 function useScrollAnimation() {
   const controls = useAnimation();
