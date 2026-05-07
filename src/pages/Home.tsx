@@ -11,9 +11,10 @@ import usecaseAgencies from "../assets/images/usecaseAgencies.webp";
 import flowCapture from "../assets/images/flowCapture.webp";
 import flowUnderstand from "../assets/images/flowUnderstand.webp";
 import flowAct from "../assets/images/flowAct.webp";
-import leadQualification from "../assets/icons/leadQualification.png";
-import customerIntelligence from "../assets/icons/customerIntelligence.png";
-import salesAutomation from "../assets/icons/salesAutomation.png";
+
+import leadQualification from "../assets/icons/leadQualification.webp";
+import customerIntelligence from "../assets/icons/customerIntelligence.webp";
+import salesAutomation from "../assets/icons/salesAutomation.webp";
 
 import conversationLayer from "../assets/motions/conversationLayer.webm";
 import intelligenceLayer from "../assets/motions/intelligenceLayer.webm";
