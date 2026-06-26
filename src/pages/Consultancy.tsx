@@ -7,7 +7,7 @@ import SectionHeading from "../components/SectionHeading";
 import flowCapture from "../assets/images/flowCapture.webp";
 import flowUnderstand from "../assets/images/flowUnderstand.webp";
 import flowAct from "../assets/images/flowAct.webp";
-import userCaseSaas from "../assets/images/usecaseSaas.webp";
+import usecaseSaaS from "../assets/images/usecaseSaaS.webp";
 
 import { Link } from "react-router-dom";
 
@@ -68,7 +68,7 @@ const features = [
     title: "AI Upskilling & Governance",
     description:
       "Training your team to collaborate effectively with AI while establishing strict ethical, security, and compliance guardrails.",
-    src: userCaseSaas,
+    src: usecaseSaaS,
   },
 ];
 
