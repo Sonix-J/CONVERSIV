@@ -28,6 +28,7 @@ export default function Navbar() {
         {[
           { to: "/", label: "Homepage" },
           { to: "/platform", label: "Platform" },
+          { to: "/consultancy", label: "Consultancy" },
           { to: "/usecase", label: "Use Cases" },
           { to: "/stakeholders", label: "Stakeholders" },
           { to: "/about", label: "About" },
@@ -63,6 +64,7 @@ export default function Navbar() {
           {[
             { to: "/", label: "Home" },
             { to: "/platform", label: "Platform" },
+            { to: "/consultancy", label: "Consultancy" },
             { to: "/usecase", label: "Use Cases" },
             { to: "/stakeholders", label: "Stakeholders" },
             { to: "/about", label: "About" },

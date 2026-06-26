@@ -3,6 +3,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Platform from "./pages/Platform";
+import Consultancy from "./pages/Consultancy";
 import UseCase from "./pages/UseCases";
 import Stakeholders from "./pages/Stakeholders";
 import About from "./pages/About";
@@ -17,6 +18,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/platform" element={<Platform />} />
+        <Route path="/consultancy" element={<Consultancy />} />
         <Route path="/usecase" element={<UseCase />} />
         <Route path="/stakeholders" element={<Stakeholders />} />
         <Route path="/about" element={<About />} />
