@@ -40,7 +40,7 @@ function ScrollSection({ children, direction = "up", delay = 0 }) {
 
 export default function EarlyAccess() {
   return (
-    <div className="min-h-screen bg-[#0C1A2B]">
+    <div className="site-page min-h-screen bg-[#0C1A2B]">
       <motion.main
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -56,7 +56,7 @@ export default function EarlyAccess() {
             radial-gradient(ellipse at 90% 80%, #E5E5E5 0%, transparent 35%)
           `,
         }}
-        className="relative flex flex-col p-8 md:p-20 justify-center items-center gap-8 min-h-screen z-10"
+        className="site-hero relative flex flex-col justify-center items-center gap-8 z-10"
       >
         <motion.div
           className="flex flex-col items-center gap-6 md:gap-8 max-w-4xl mx-auto"
@@ -68,7 +68,7 @@ export default function EarlyAccess() {
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center text-white">
               Access the system before everyone else.
             </h1>
-            <p className="text-center text-white text-sm md:text-base px-4">
+            <p className="text-center text-white text-base max-w-2xl mx-auto">
               Turn every interaction into intelligence—before the rest of the
               market catches up.
             </p>

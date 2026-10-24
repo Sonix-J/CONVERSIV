@@ -19,38 +19,38 @@ export default function LayerRow({
 }: LayerRowProps) {
   return (
     <div
-      className={`flex flex-col gap-8 md:min-h-96 md:items-stretch ${reverse ? "md:flex-row-reverse" : "md:flex-row"}`}
+      className={`flex flex-col gap-8 md:gap-12 lg:gap-16 md:min-h-96 md:items-stretch ${reverse ? "md:flex-row-reverse" : "md:flex-row"}`}
     >
       <div className="w-full md:w-1/2 h-64 md:h-auto md:min-h-80 rounded-2xl overflow-hidden shrink-0">
         {image}
       </div>
-      <div className="w-full md:w-1/2 flex flex-col gap-4 md:gap-6 justify-center">
-        <h3 className="text-xl md:text-2xl font-bold">{title}</h3>
+      <div className="w-full md:w-1/2 flex flex-col gap-5 md:gap-6 justify-center">
+        <h3>{title}</h3>
 
-        {description && <p className="text-gray-400">{description}</p>}
+        {description && <p className="text-base md:text-lg text-gray-400 max-w-xl">{description}</p>}
 
         {problem && (
           <div className="flex flex-col gap-1">
-            <span className="text-lg md:text-xl text-gray-600 font-bold max-w-sm">
+            <span className="text-base md:text-lg text-gray-600 font-semibold max-w-sm">
               Problem
             </span>
-            <p className="text-sm text-gray-400">{problem}</p>
+            <p className="text-sm md:text-base text-gray-400 max-w-xl">{problem}</p>
           </div>
         )}
         {solution && (
           <div className="flex flex-col gap-1">
-            <span className="text-lg md:text-xl text-gray-600 font-bold max-w-sm">
+            <span className="text-base md:text-lg text-gray-600 font-semibold max-w-sm">
               Solution
             </span>
-            <p className="text-sm text-gray-400">{solution}</p>
+            <p className="text-sm md:text-base text-gray-400 max-w-xl">{solution}</p>
           </div>
         )}
         {outcome && (
           <div className="flex flex-col gap-1">
-            <span className="text-lg md:text-xl text-gray-600 font-bold max-w-sm">
+            <span className="text-base md:text-lg text-gray-600 font-semibold max-w-sm">
               Outcome
             </span>
-            <p className="text-sm text-gray-400">{outcome}</p>
+            <p className="text-sm md:text-base text-gray-400 max-w-xl">{outcome}</p>
           </div>
         )}
       </div>

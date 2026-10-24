@@ -2,8 +2,8 @@ import logo from "../assets/icons/logo.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-white text-black px-8 md:px-16 lg:px-32 py-12 md:py-16">
-      <div className="flex flex-col md:flex-row gap-10 md:gap-0 md:justify-between">
+    <footer className="site-footer bg-white text-black py-12 md:py-16">
+      <div className="flex flex-col md:flex-row gap-10 md:gap-16 md:justify-between max-w-7xl mx-auto">
         <div className="flex flex-col gap-4 max-w-xs">
           <div className="flex items-center">
             <img
@@ -24,7 +24,7 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className="flex flex-col gap-4 justify-center">
+        <div className="flex flex-col gap-4 justify-center md:min-w-80">
           <div className="flex items-center gap-2 text-gray-500 text-sm">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +94,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="mt-8 pt-6 border-t border-gray-100">
+      <div className="mt-10 pt-6 border-t border-gray-100 max-w-7xl mx-auto">
         <p className="text-xs text-gray-400">
           © {new Date().getFullYear()} Conversiv. All rights reserved.
         </p>

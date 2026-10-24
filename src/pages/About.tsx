@@ -39,7 +39,7 @@ function ScrollSection({ children, direction = "up", delay = 0 }) {
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-[#0C1A2B]">
+    <div className="site-page min-h-screen bg-[#0C1A2B]">
       <motion.main
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -55,7 +55,7 @@ export default function About() {
             radial-gradient(ellipse at 90% 80%, #E5E5E5 0%, transparent 35%)
           `,
         }}
-        className="relative flex flex-col p-8 md:p-20 justify-center items-center gap-8 min-h-screen z-10"
+        className="site-hero relative flex flex-col justify-center items-center gap-8 z-10"
       >
         <motion.div
           className="flex flex-col items-center gap-6 md:gap-8 max-w-4xl mx-auto"
@@ -67,7 +67,7 @@ export default function About() {
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center text-white">
               Conversiv was built from a simple observation:
             </h1>
-            <p className="text-center text-white text-sm md:text-base px-4">
+            <p className="text-center text-white text-base max-w-2xl mx-auto">
               Revenue is not lost in tools, it's lost in conversations. We're
               building a system where every interaction becomes structured
               intelligence.
@@ -77,8 +77,8 @@ export default function About() {
       </motion.main>
 
       <ScrollSection direction="up">
-        <section className="px-6 py-16 md:px-64 md:py-32">
-          <div className="w-full rounded-2xl overflow-hidden">
+        <section className="site-section">
+          <div className="w-full max-w-5xl mx-auto rounded-2xl overflow-hidden">
             <video
               autoPlay
               loop

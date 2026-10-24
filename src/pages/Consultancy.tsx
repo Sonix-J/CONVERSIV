@@ -74,7 +74,7 @@ const features = [
 
 export default function Platform() {
   return (
-    <div className="min-h-screen bg-[#0C1A2B]">
+    <div className="site-page min-h-screen bg-[#0C1A2B]">
       <motion.main
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -90,7 +90,7 @@ export default function Platform() {
             radial-gradient(ellipse at 90% 80%, #E5E5E5 0%, transparent 35%)
           `,
         }}
-        className="relative flex flex-col p-8 md:p-20 justify-center items-center gap-8 min-h-screen z-10"
+        className="site-hero relative flex flex-col justify-center items-center gap-8 z-10"
       >
         <motion.div
           className="flex flex-col items-center gap-6 md:gap-8 max-w-4xl mx-auto"
@@ -100,7 +100,7 @@ export default function Platform() {
         >
           <div className="flex flex-col gap-4">
             <SectionHeading text="Turn AI Potential into Business Performance." />
-            <p className="text-center text-white text-sm md:text-base px-4">
+            <p className="text-center text-white text-base max-w-2xl mx-auto">
               Navigating the AI landscape shouldn't feel like guesswork.
             </p>
           </div>
@@ -113,12 +113,12 @@ export default function Platform() {
           transition={{ delay: 0.4, duration: 0.8 }}
         >
           <Link to="/earlyaccess">
-            <button className="bg-white rounded px-3 py-2 text-sm md:text-base transition-all duration-500 hover:bg-black hover:text-white">
+            <button className="bg-white rounded-lg transition-all duration-500 hover:bg-black hover:text-white">
               Book a Consultation
             </button>
           </Link>
           <Link to="/about">
-            <button className="border rounded px-3 py-2 text-sm md:text-base text-white transition-all duration-500 hover:bg-white hover:text-black hover:border-white">
+            <button className="border rounded-lg text-white transition-all duration-500 hover:bg-white hover:text-black hover:border-white">
               Explore our solutions
             </button>
           </Link>
@@ -126,9 +126,9 @@ export default function Platform() {
       </motion.main>
 
       <ScrollSection direction="up">
-        <section className="flex flex-col px-6 md:px-32 py-16 md:py-32 gap-12 bg-[#0C1A2B] text-white min-h-screen">
+        <section className="site-section flex flex-col gap-10 lg:gap-14 bg-[#0C1A2B] text-white">
           <motion.h2
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white font-bold"
+            className="text-white font-bold"
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true, amount: 0.3 }}
@@ -137,7 +137,7 @@ export default function Platform() {
             The Challenge
           </motion.h2>
           <motion.p
-            className="text-white text-sm md:text-xl"
+            className="text-gray-300 text-base md:text-lg max-w-3xl"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
@@ -149,7 +149,7 @@ export default function Platform() {
           </motion.p>
 
           <motion.p
-            className="text-3xl md:text-center sm:text-4xl md:text-5xl lg:text-6xl text-white font-bold mt-24"
+            className="text-white font-bold md:text-center max-w-5xl md:mx-auto mt-6 lg:mt-10"
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
@@ -185,7 +185,7 @@ export default function Platform() {
           </div>
 
           <div className="hidden md:flex md:flex-col gap-0">
-            <div className="grid grid-cols-2 gap-x-6 mb-24">
+            <div className="grid grid-cols-2 gap-x-8 lg:gap-x-10 mb-16 lg:mb-20">
               {[features[0], features[1]].map((feature, i) => (
                 <motion.div
                   key={i}
@@ -211,7 +211,7 @@ export default function Platform() {
               ))}
             </div>
 
-            <div className="grid grid-cols-2 gap-x-6">
+            <div className="grid grid-cols-2 gap-x-8 lg:gap-x-10">
               {[features[2], features[3]].map((feature, i) => (
                 <motion.div
                   key={i}
@@ -257,7 +257,7 @@ export default function Platform() {
               radial-gradient(ellipse at 90% 80%, #E5E5E5 0%, transparent 35%)
             `,
           }}
-          className="flex flex-col justify-center items-center p-8 md:p-20 gap-8 md:gap-12 min-h-screen"
+          className="site-section flex flex-col justify-center items-center gap-8 md:gap-10"
         >
           <motion.div
             initial={{ y: 50, opacity: 0 }}
@@ -267,7 +267,7 @@ export default function Platform() {
             className="flex flex-col gap-4"
           >
             <SectionHeading text="Ready to be build an AI-driven future?" />
-            <motion.p className="text-center text-white text-sm md:text-base">
+            <motion.p className="text-center text-white text-base max-w-2xl mx-auto">
               Let’s map out your AI transformation together. Schedule a
               discovery call with our expert consultants today.
             </motion.p>
@@ -280,7 +280,7 @@ export default function Platform() {
             transition={{ delay: 0.2, duration: 0.6 }}
           >
             <Link to="/earlyaccess">
-              <button className="bg-white rounded px-3 py-2 text-sm md:text-base transition-all duration-500 hover:bg-black hover:text-white">
+              <button className="bg-white rounded-lg transition-all duration-500 hover:bg-black hover:text-white">
                 Schedule your discovery call
               </button>
             </Link>

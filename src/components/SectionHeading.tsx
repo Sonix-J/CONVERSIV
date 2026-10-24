@@ -4,7 +4,7 @@ interface SectionHeadingProps {
 
 export default function SectionHeading({ text }: SectionHeadingProps) {
   return (
-    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white font-bold text-center max-w-4xl px-4">
+    <h2 className="text-white font-bold text-center max-w-4xl mx-auto">
       {text}
     </h2>
   );

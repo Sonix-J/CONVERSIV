@@ -35,7 +35,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 flex items-center justify-between border-b border-gray-400 px-8 lg:px-32 h-20 bg-[#0C1A2B]">
+    <nav className="sticky top-0 z-50 flex items-center justify-between border-b border-gray-400 px-6 sm:px-8 lg:px-12 xl:px-20 h-20 bg-[#0C1A2B]">
       <div
         className="flex items-center gap-2 font-semibold cursor-pointer"
         onClick={() => navigate("/")}
@@ -47,7 +47,7 @@ export default function Navbar() {
         />
       </div>
 
-      <ul className="hidden min-[1300px]:flex items-center gap-8 list-none">
+      <ul className="hidden min-[1300px]:flex items-center gap-7 list-none">
         {/* Homepage */}
         <li key={navLinks[0].label}>
           <Link
@@ -143,7 +143,7 @@ export default function Navbar() {
       </button>
 
       {menuOpen && (
-        <ul className="min-[1300px]:hidden absolute top-20 left-0 right-0 bg-[#0C1A2B] border-b border-gray-700 flex flex-col gap-4 px-8 py-6 list-none z-50">
+        <ul className="min-[1300px]:hidden absolute top-20 left-0 right-0 bg-[#0C1A2B] border-b border-gray-700 flex flex-col gap-5 px-6 sm:px-8 py-6 list-none z-50">
           <li>
             <Link
               to={navLinks[0].to}

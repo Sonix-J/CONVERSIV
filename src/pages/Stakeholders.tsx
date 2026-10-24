@@ -76,7 +76,7 @@ export default function Stakeholders() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#0C1A2B]">
+    <div className="site-page min-h-screen bg-[#0C1A2B]">
       <motion.main
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -92,7 +92,7 @@ export default function Stakeholders() {
             radial-gradient(ellipse at 90% 80%, #E5E5E5 0%, transparent 35%)
           `,
         }}
-        className="relative flex flex-col p-8 md:p-20 justify-center items-center gap-8 min-h-screen z-10"
+        className="site-hero relative flex flex-col justify-center items-center gap-8 z-10"
       >
         <motion.div
           className="flex flex-col items-center gap-6 md:gap-8 max-w-4xl mx-auto"
@@ -107,9 +107,9 @@ export default function Stakeholders() {
       </motion.main>
 
       <ScrollSection direction="up">
-        <section className="flex flex-col px-6 md:px-32 py-16 md:py-32 gap-12 bg-[#0C1A2B] text-white min-h-screen">
+        <section className="site-section flex flex-col gap-10 lg:gap-12 bg-[#0C1A2B] text-white">
           <motion.h2
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold"
+            className="font-bold"
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true, amount: 0.3 }}
@@ -118,7 +118,7 @@ export default function Stakeholders() {
             Core Team
           </motion.h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 lg:gap-10">
             {members.map((member, index) => (
               <motion.div
                 key={member.name}
@@ -147,12 +147,12 @@ export default function Stakeholders() {
                   transition={{ duration: 0.6, delay: index * 0.1 + 0.2 }}
                 >
                   <div className="flex flex-col gap-1">
-                    <p className="font-semibold text-xl">{member.name}</p>
-                    <p className="text-white font-bold text-lg">
+                    <p className="font-semibold text-lg">{member.name}</p>
+                    <p className="text-white font-medium text-base">
                       {member.role}
                     </p>
                   </div>
-                  <p className="text-white text-sm leading-relaxed">
+                  <p className="text-gray-300 text-sm leading-relaxed">
                     {member.bio}
                   </p>
                 </motion.div>

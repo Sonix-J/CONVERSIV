@@ -49,7 +49,7 @@ function ScrollSection({ children, direction = "up", delay = 0 }) {
 
 export default function Platform() {
   return (
-    <div className="min-h-screen bg-[#0C1A2B]">
+    <div className="site-page min-h-screen bg-[#0C1A2B]">
       <motion.main
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -65,7 +65,7 @@ export default function Platform() {
             radial-gradient(ellipse at 90% 80%, #E5E5E5 0%, transparent 35%)
           `,
         }}
-        className="relative flex flex-col p-8 md:p-20 justify-center items-center gap-8 min-h-screen z-10"
+        className="site-hero relative flex flex-col justify-center items-center gap-8 z-10"
       >
         <motion.div
           className="flex flex-col items-center gap-6 md:gap-8 max-w-4xl mx-auto"
@@ -77,7 +77,7 @@ export default function Platform() {
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center text-white">
               Your AI that never forgets.
             </h1>
-            <p className="text-center text-white text-sm md:text-base px-4">
+            <p className="text-center text-white text-base max-w-2xl mx-auto">
               Built on memory, not messages. Every interaction compounds into
               intelligence.
             </p>
@@ -91,12 +91,12 @@ export default function Platform() {
           transition={{ delay: 0.4, duration: 0.8 }}
         >
           <Link to="/earlyaccess">
-            <button className="bg-white rounded px-3 py-2 text-sm md:text-base transition-all duration-500 hover:bg-black hover:text-white">
+            <button className="bg-white rounded-lg transition-all duration-500 hover:bg-black hover:text-white">
               Get early access
             </button>
           </Link>
           <Link to="/about">
-            <button className="border rounded px-3 py-2 text-sm md:text-base text-white transition-all duration-500 hover:bg-white hover:text-black hover:border-white">
+            <button className="border rounded-lg text-white transition-all duration-500 hover:bg-white hover:text-black hover:border-white">
               See how it works
             </button>
           </Link>
@@ -104,9 +104,9 @@ export default function Platform() {
       </motion.main>
 
       <ScrollSection direction="up">
-        <section className="flex flex-col px-6 md:px-32 py-16 md:py-32 gap-12 bg-[#0C1A2B] text-white min-h-screen">
+        <section className="site-section flex flex-col gap-12 lg:gap-16 bg-[#0C1A2B] text-white">
           <motion.h2
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white font-bold"
+            className="text-white font-bold max-w-5xl"
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true, amount: 0.3 }}
@@ -144,7 +144,7 @@ export default function Platform() {
             ))}
           </div>
 
-          <div className="hidden md:grid grid-cols-2 gap-4 md:gap-6 items-start">
+          <div className="hidden md:grid grid-cols-2 gap-6 lg:gap-8 items-start">
             <div className="flex flex-col gap-4 md:gap-6">
               {[conversationLayer, intelligenceLayer].map((src, i) => (
                 <motion.div
@@ -195,8 +195,8 @@ export default function Platform() {
       </ScrollSection>
 
       <ScrollSection direction="up">
-        <section className="flex flex-col justify-between px-6 md:px-12 py-16 md:py-32 text-white">
-          <div className="flex flex-col md:flex-row gap-8 justify-center items-start">
+        <section className="site-section flex flex-col justify-between text-white">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10 items-start">
             {[
               {
                 title: "Capture",

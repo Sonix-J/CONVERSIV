@@ -43,7 +43,7 @@ function ScrollSection({ children, direction = "up", delay = 0 }) {
 
 export default function UseCase() {
   return (
-    <div className="min-h-screen bg-[#0C1A2B]">
+    <div className="site-page min-h-screen bg-[#0C1A2B]">
       <motion.main
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -59,7 +59,7 @@ export default function UseCase() {
             radial-gradient(ellipse at 90% 80%, #E5E5E5 0%, transparent 35%)
           `,
         }}
-        className="relative flex flex-col p-8 md:p-20 justify-center items-center gap-8 min-h-screen z-10"
+        className="site-hero relative flex flex-col justify-center items-center gap-8 z-10"
       >
         <motion.div
           className="flex flex-col items-center gap-6 md:gap-8 max-w-4xl mx-auto"
@@ -73,7 +73,7 @@ export default function UseCase() {
         </motion.div>
       </motion.main>
 
-      <section className="flex flex-col justify-between px-6 md:px-12 py-16 md:py-32 gap-16 md:gap-32 text-white min-h-screen">
+      <section className="site-section flex flex-col justify-between gap-16 lg:gap-24 text-white">
         {[
           {
             title: "Real Estate",

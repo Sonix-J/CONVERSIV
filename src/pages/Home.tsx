@@ -37,7 +37,7 @@ function useScrollAnimation() {
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#0C1A2B]">
+    <div className="site-page min-h-screen bg-[#0C1A2B]">
       <motion.main
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -53,7 +53,7 @@ export default function Home() {
             radial-gradient(ellipse at 90% 80%, #E5E5E5 0%, transparent 35%)
           `,
         }}
-        className="relative flex flex-col p-8 md:p-20 justify-center items-center gap-8 min-h-screen z-10"
+        className="site-hero relative flex flex-col justify-center items-center gap-8 z-10"
       >
         <motion.div
           className="flex flex-col items-center gap-6 md:gap-8 max-w-3xl mx-auto"
@@ -65,7 +65,7 @@ export default function Home() {
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center text-white">
               Turn every conversation into revenue.
             </h1>
-            <p className="text-center text-white text-sm md:text-base px-4">
+            <p className="text-center text-white text-base max-w-2xl mx-auto">
               Conversiv is an AI-native system that captures, understands, and
               acts on every customer interaction so your pipeline runs itself.
             </p>
@@ -78,12 +78,12 @@ export default function Home() {
           transition={{ delay: 0.4, duration: 0.8 }}
         >
           <Link to="/earlyaccess">
-            <button className="bg-white rounded px-3 py-2 text-sm md:text-base cursor-pointer transition-all duration-500 hover:bg-black hover:text-white">
+            <button className="bg-white rounded-lg cursor-pointer transition-all duration-500 hover:bg-black hover:text-white">
               Get early access
             </button>
           </Link>
           <Link to="/platform">
-            <button className="border rounded px-3 py-2 text-sm md:text-base text-white cursor-pointer transition-all duration-500 hover:bg-white hover:text-black hover:border-white">
+            <button className="border rounded-lg text-white cursor-pointer transition-all duration-500 hover:bg-white hover:text-black hover:border-white">
               See how it works
             </button>
           </Link>
@@ -91,15 +91,15 @@ export default function Home() {
       </motion.main>
 
       <ScrollSection direction="left">
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-8 text-white min-h-screen">
+        <section className="site-section grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 text-white items-center">
           <motion.div
-            className="flex flex-col p-8 md:p-12 gap-6 md:gap-8 justify-center"
+            className="flex flex-col gap-6 justify-center"
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-left">
+            <h2 className="font-bold text-left">
               Most teams lose revenue in conversations they never track.
             </h2>
             <p className="text-lg md:text-xl text-gray-400 max-w-sm">
@@ -111,13 +111,13 @@ export default function Home() {
           </motion.div>
 
           <motion.div
-            className="flex items-center justify-center p-8 md:p-12 md:pr-0"
+            className="flex items-center justify-center"
             initial={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <div className="w-full rounded-xl md:rounded-l-xl md:rounded-r-none overflow-hidden border border-gray-700 md:border-r-0">
+            <div className="w-full rounded-2xl overflow-hidden border border-gray-700">
               <div className="flex items-center gap-2 px-4 py-3 bg-gray-800">
                 <div className="w-3 h-3 rounded-full bg-red-500" />
                 <div className="w-3 h-3 rounded-full bg-yellow-500" />
@@ -134,7 +134,7 @@ export default function Home() {
       </ScrollSection>
 
       <motion.div
-        className="flex justify-center items-center px-6 py-8 md:py-0"
+        className="site-section flex justify-center items-center"
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
@@ -144,8 +144,8 @@ export default function Home() {
       </motion.div>
 
       <ScrollSection direction="up">
-        <section className="flex flex-col justify-between px-6 md:px-12 py-16 md:py-32 text-white">
-          <div className="flex flex-col md:flex-row gap-8 justify-center items-start">
+        <section className="site-section flex flex-col justify-between text-white">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10 items-start">
             <motion.div
               whileHover={{ y: -10, transition: { duration: 0.2 } }}
               className="w-full"
@@ -201,7 +201,7 @@ export default function Home() {
       </ScrollSection>
 
       <motion.div
-        className="flex justify-center items-center px-6 py-8 md:py-0"
+        className="site-section flex justify-center items-center"
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
@@ -211,7 +211,7 @@ export default function Home() {
       </motion.div>
 
       <ScrollSection direction="up">
-        <section className="flex flex-col justify-between px-6 md:px-12 py-16 md:py-32 gap-16 md:gap-32 text-white min-h-screen">
+        <section className="site-section flex flex-col justify-between gap-16 lg:gap-24 text-white">
           <motion.div
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -309,7 +309,7 @@ export default function Home() {
       </ScrollSection>
 
       <motion.div
-        className="flex justify-center items-center px-6 py-8 md:py-0"
+        className="site-section flex justify-center items-center"
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
@@ -319,8 +319,8 @@ export default function Home() {
       </motion.div>
 
       <ScrollSection direction="up">
-        <section className="flex flex-col px-6 md:px-12 py-16 md:py-32 gap-8 text-white">
-          <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
+        <section className="site-section flex flex-col gap-8 text-white">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 justify-center items-stretch">
             <motion.div
               whileHover={{ scale: 1.05, rotateY: 5 }}
               transition={{ duration: 0.3 }}
@@ -377,8 +377,8 @@ export default function Home() {
       </ScrollSection>
 
       <ScrollSection direction="left">
-        <section className="flex flex-col px-6 md:px-12 py-16 md:py-32 gap-16 md:gap-32 text-white min-h-screen">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white font-bold">
+        <section className="site-section flex flex-col gap-12 text-white">
+          <h2 className="text-white font-bold max-w-5xl">
             Built with early partners across real estate, B2B, and service
             industries.
           </h2>
@@ -403,7 +403,7 @@ export default function Home() {
       radial-gradient(ellipse at 90% 80%, #E5E5E5 0%, transparent 35%)
     `,
         }}
-        className="flex flex-col justify-center items-center p-8 md:p-20 gap-8 md:gap-12 min-h-screen"
+        className="site-section flex flex-col justify-center items-center gap-8 md:gap-10"
       >
         <motion.div
           initial={{ y: 50, opacity: 0 }}
@@ -421,7 +421,7 @@ export default function Home() {
           transition={{ delay: 0.2, duration: 0.6 }}
         >
           <Link to="/earlyaccess">
-            <button className="bg-white rounded px-3 py-2 text-sm md:text-base transition-all duration-500 hover:bg-black hover:text-white">
+            <button className="bg-white rounded-lg transition-all duration-500 hover:bg-black hover:text-white">
               Get early access
             </button>
           </Link>

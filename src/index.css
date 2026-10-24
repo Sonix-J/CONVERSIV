@@ -6,8 +6,103 @@
 
 body {
   font-family: "Inter", sans-serif;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 html, body {
   overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Shared layout rhythm: 24px mobile gutters, fluid tablet gutters, and a
+   centered 1280px content area on wide screens. */
+.site-hero,
+.site-section,
+.site-footer {
+  padding-left: max(clamp(1.5rem, 5vw, 5rem), calc((100vw - 80rem) / 2));
+  padding-right: max(clamp(1.5rem, 5vw, 5rem), calc((100vw - 80rem) / 2));
+}
+
+.site-hero {
+  min-height: calc(100svh - 5rem);
+  padding-top: clamp(5rem, 9vw, 8rem);
+  padding-bottom: clamp(5rem, 9vw, 8rem);
+}
+
+.site-section {
+  min-height: auto;
+  padding-top: clamp(4.5rem, 8vw, 7.5rem);
+  padding-bottom: clamp(4.5rem, 8vw, 7.5rem);
+}
+
+.site-page h1,
+.site-page h2,
+.site-page h3,
+.site-page p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.site-page h1,
+.site-page h2 {
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+
+.site-page h1 {
+  font-size: clamp(2.5rem, 5.2vw, 4rem);
+}
+
+.site-page h2 {
+  font-size: clamp(2rem, 4.2vw, 3.25rem);
+}
+
+.site-page h3 {
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.018em;
+}
+
+.site-page p {
+  line-height: 1.7;
+}
+
+.site-page button,
+.site-page input {
+  font: inherit;
+}
+
+.site-page button {
+  min-height: 2.75rem;
+  padding: 0.6875rem 1.125rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+@media (max-width: 639px) {
+  body {
+    font-size: 15px;
+  }
+
+  .site-hero {
+    min-height: calc(100svh - 5rem);
+  }
 }
